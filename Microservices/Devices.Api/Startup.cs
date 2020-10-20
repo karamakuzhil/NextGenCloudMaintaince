@@ -104,7 +104,6 @@ namespace Devices.Api
         private void ConfigureEventBus(IApplicationBuilder app)
         {
             var eventBus = app.ApplicationServices.GetRequiredService<IEventBus>();
-            eventBus.Subscribe<DeviceRegistrationIntegrationEvent, DeviceRegistrationIntegrationEventHandler>();
 
         }
 

@@ -21,11 +21,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\BuildingBlocks\EventBusServiceBus\EventBusServiceBus.csproj" />
+    <ProjectReference Include="..\..\BuildingBlocks\EventDrivers\EventDrivers.csproj" />
     <ProjectReference Include="..\Device.Application\Device.Application.csproj" />
     <ProjectReference Include="..\Device.Persistance\Device.Persistance.csproj" />
     <ProjectReference Include="..\Devices.Domain\Devices.Domain.csproj" />
-    <ProjectReference Include="..\EventBusServiceBus\EventBusServiceBus.csproj" />
-    <ProjectReference Include="..\EventDrivers\EventDrivers.csproj" />
   </ItemGroup>
 
 </Project>

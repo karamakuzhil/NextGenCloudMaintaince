@@ -9,8 +9,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\BuildingBlocks\EventDrivers\EventDrivers.csproj" />
     <ProjectReference Include="..\Devices.Domain\Devices.Domain.csproj" />
-    <ProjectReference Include="..\EventDrivers\EventDrivers.csproj" />
   </ItemGroup>
 
 </Project>

@@ -9,31 +9,33 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservices", "Microservi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Devices", "Devices", "{28D8D55F-8BD1-4ED6-95F8-FD74ACB35FA9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Devices.Api", "Devices.Api\Devices.Api.csproj", "{C1F78285-37E4-4C82-B5D5-ABCBEF700CCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Devices.Api", "Microservices\Devices.Api\Devices.Api.csproj", "{C1F78285-37E4-4C82-B5D5-ABCBEF700CCA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Device.Application", "Device.Application\Device.Application.csproj", "{0DE771DE-2D4D-4CA1-AAAD-0C8E70837CED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Device.Application", "Microservices\Device.Application\Device.Application.csproj", "{0DE771DE-2D4D-4CA1-AAAD-0C8E70837CED}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Devices.Domain", "Devices.Domain\Devices.Domain.csproj", "{3110BB1C-0F49-4495-928F-18F0B538ABB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Devices.Domain", "Microservices\Devices.Domain\Devices.Domain.csproj", "{3110BB1C-0F49-4495-928F-18F0B538ABB4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{BDBC6C45-566F-4C39-B6EB-BC89D4F74D99}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventBus", "EventBus", "{2A4CC771-D69F-4164-9FD3-C9BC079F6932}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventDrivers", "EventDrivers\EventDrivers.csproj", "{0448F553-B1BF-4304-A6F3-610DDA493B10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventDrivers", "BuildingBlocks\EventDrivers\EventDrivers.csproj", "{0448F553-B1BF-4304-A6F3-610DDA493B10}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBusServiceBus", "EventBusServiceBus\EventBusServiceBus.csproj", "{3425BA46-DC8A-4629-ABC7-871AEA9F1B2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBusServiceBus", "BuildingBlocks\EventBusServiceBus\EventBusServiceBus.csproj", "{3425BA46-DC8A-4629-ABC7-871AEA9F1B2C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Device.Persistance", "Device.Persistance\Device.Persistance.csproj", "{30EED3B0-435D-4FC5-86E7-A3C2C9307175}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Device.Persistance", "Microservices\Device.Persistance\Device.Persistance.csproj", "{30EED3B0-435D-4FC5-86E7-A3C2C9307175}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{590212DB-8BDB-4957-B4CA-61BB6A2CB66F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.Api", "Identity.Api\Identity.Api.csproj", "{4CE7D8C9-4EC4-4026-ACF7-579C1E5DFA3B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.Api", "Microservices\Identity.Api\Identity.Api.csproj", "{4CE7D8C9-4EC4-4026-ACF7-579C1E5DFA3B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIGateways", "APIGateways", "{DCCF8F1A-7717-4E15-B53A-9CF3235F79BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIGateway", "APIGateway\APIGateway.csproj", "{2DDB767E-7AF9-414F-9103-124DEE090B42}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIGateway", "BuildingBlocks\APIGateway\APIGateway.csproj", "{2DDB767E-7AF9-414F-9103-124DEE090B42}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServerLess", "ServerLess", "{C9B7ED6B-8A94-47C0-B994-3DE7D8687FC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceRegistrationProcessor", "Microservices\DeviceRegistrationProcessor\DeviceRegistrationProcessor.csproj", "{7FCE9B13-AC25-4E8B-A43E-28143187D41B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +75,10 @@ Global
 		{2DDB767E-7AF9-414F-9103-124DEE090B42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DDB767E-7AF9-414F-9103-124DEE090B42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DDB767E-7AF9-414F-9103-124DEE090B42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FCE9B13-AC25-4E8B-A43E-28143187D41B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FCE9B13-AC25-4E8B-A43E-28143187D41B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FCE9B13-AC25-4E8B-A43E-28143187D41B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FCE9B13-AC25-4E8B-A43E-28143187D41B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -93,6 +99,7 @@ Global
 		{DCCF8F1A-7717-4E15-B53A-9CF3235F79BE} = {BDBC6C45-566F-4C39-B6EB-BC89D4F74D99}
 		{2DDB767E-7AF9-414F-9103-124DEE090B42} = {DCCF8F1A-7717-4E15-B53A-9CF3235F79BE}
 		{C9B7ED6B-8A94-47C0-B994-3DE7D8687FC5} = {59741A01-02C5-4550-B4C4-526C020EC3FB}
+		{7FCE9B13-AC25-4E8B-A43E-28143187D41B} = {C9B7ED6B-8A94-47C0-B994-3DE7D8687FC5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {686FC597-7023-4229-A629-4B3DE9A200E8}
